@@ -1,0 +1,151 @@
+.box-forms {
+    margin: 140px 0;
+
+    .container-form {
+        border: 1px solid $color-black;
+        position: relative;
+        max-width: 430px;
+        width: 100%;
+        border-radius: 10px;
+        //overflow: hidden;
+
+        .forms {
+            display: flex;
+            align-items: center;
+            height: 440px;
+            width: 100%;
+            transition: height 0.2s ease;
+
+            .form {
+                width: 100%;
+                padding: 30px;
+                @include bgc($color-white);
+                transition: margin-left 0.18s ease;
+
+                .title {
+                    position: relative;
+                    @include font-base-3;
+                    font-size: 25px;
+                    font-weight: $font-normal;
+                    color: $color-black;
+                    text-align: center;
+                    display: block;
+                    line-height: 25px;
+
+                }
+
+                .input-field {
+                    position: relative;
+                    height: 50px;
+                    width: 100%;
+                    margin-top: 30px;
+
+                    input {
+                        position: absolute;
+                        height: 100%;
+                        width: 100%;
+                        padding: 0 35px;
+                        border: none;
+                        outline: none;
+                        font-size: 18px;
+                        border-bottom: 2px solid $color-black;
+                        border-top: 2px solid transparent;
+                        transition: all 0.2s ease;
+
+                        &:is(:focus, :valid) {
+                            border-bottom: 2px solid $color-main;
+                        }
+
+                        &:is(:focus, :valid)~i {
+                            color: $color-main;
+                        }
+
+                        &:is(:focus, :valid)~i.fa-eye-slash {
+                            color: $color-black;
+                        }
+                    }
+
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: $color-black;
+                        font-size: 23px;
+                        transition: all 0.2s ease;
+
+                        &.icon {
+                            left: 0;
+                        }
+
+                        &.showHidePw {
+                            right: 0;
+                            cursor: pointer;
+                            color: $color-black;
+                            padding: 10px;
+                        }
+                    }
+                }
+
+                .checkbox-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 20px;
+
+                    .checkbox-content {
+                        display: flex;
+                        align-items: center;
+
+                        input {
+                            margin-right: 10px;
+                            accent-color: $color-black;
+
+                        }
+                    }
+                }
+
+                .text {
+                    color: #333;
+                    font-size: 18px;
+                }
+
+                a.text {
+                    color: #ba2b20;
+                    margin-left: 5px;
+                    text-decoration: none;
+                }
+
+                a.text:hover {
+                    text-decoration: underline;
+                }
+
+                .button {
+                    margin-top: 35px;
+
+                    button {
+                        border: none;
+                        color: $color-white;
+                        font-size: 20px;
+                        font-weight: $font-normal;
+                        letter-spacing: 1px;
+                        border-radius: 6px;
+                        padding: 15px 10px;
+                        width: 100%;
+                        @include font-base-3;
+                        @include bgc($color-black);
+                        cursor: pointer;
+                        transition: all 0.3s ease;
+                    }
+                }
+
+                .login-signup {
+                    margin-top: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    .forms-singup {
+            height: 700px;
+        }
+    }
+}

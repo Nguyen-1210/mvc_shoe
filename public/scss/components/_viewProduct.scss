@@ -1,0 +1,141 @@
+.view {
+    position: relative;
+    overflow: hidden;
+
+    .view-heading {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .view-title {
+            margin-top: 20px;
+            color: $color-black;
+            font-weight: $font-bold;
+            font-size: 20px;
+            line-height: 20px;
+            @include font-base-3;
+            text-transform: uppercase;
+        }
+
+        .btn-view {
+            display: flex;
+            justify-content: space-between;
+            width: 10%;
+
+            button {
+                padding: 5px 15px;
+                border: 0 transparent;
+                border-radius: 50%;
+                transition: all 0.2s linear;
+
+                i {
+                    font-size: 40px;
+                }
+
+                &:hover {
+                    @include bgc($color-main)
+                }
+            }
+
+        }
+
+    }
+
+    .product-container {
+        margin: 40px 0;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            flex: 0 0 auto;
+            margin: 0 10px;
+            border: 0 transparent;
+
+            .card-discount {
+                position: absolute;
+                right: 0;
+                top: 0;
+                padding: 10px;
+                display: block;
+                @include bgc($color-main);
+                clip-path: polygon(100% 0%, 100% 49%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+                font-size: 18px;
+                @include font-base-1;
+                color: $color-black;
+                font-weight: $font-normal;
+                line-height: 18px;
+            }
+
+            .card-img {
+                object-fit: cover;
+                image-rendering: pixelated;
+                @include bgc(#f6f6f6);
+            }
+        }
+
+        .card-body {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px;
+
+            .card-left {
+                width: 60%;
+
+                .card-color {
+                    font-size: 14px;
+                    @include font-base-1;
+                    color: #6c6c6c;
+                    font-weight: $font-normal;
+                    line-height: 18px;
+                }
+
+                .card-name {
+                    font-size: 16px;
+                    @include font-base-3;
+                    margin: 6px 0;
+                    color: $color-black;
+                    font-weight: $font-bold;
+                    line-height: 24px;
+                }
+
+                .card-gender {
+                    font-size: 14px;
+                    @include font-base-1;
+                    margin: 10px 0;
+                    color: #6c6c6c;
+                    font-weight: $font-normal;
+                    line-height: 18px;
+                }
+            }
+
+            .card-right {
+
+                .card-price-new {
+                    font-size: 14px;
+                    @include font-base-1;
+                    margin: 10px 0;
+                    margin-top: 0;
+                    color: #ba2b20;
+                    font-weight: $font-normal;
+                    line-height: 18px;
+                }
+
+                .card-price-old {
+                    font-size: 14px;
+                    @include font-base-1;
+                    margin: 10px 0;
+                    color: #6c6c6c;
+                    font-weight: $font-normal;
+                    line-height: 18px;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}

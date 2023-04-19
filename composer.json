@@ -1,0 +1,17 @@
+{
+    "name": "ghetc/mvc_shoe",
+    "autoload": {
+        "psr-4": {
+            "App\\": "web/"
+        }
+    },
+    "authors": [
+        {
+            "name": "NGUYEN"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "nikic/fast-route": "^1.3"
+    }
+}

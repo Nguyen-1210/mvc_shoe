@@ -1,0 +1,17 @@
+@import '../base/variable-color';
+@import '../base/variable-fonts';
+@import '../base/reset';
+@import '../base/mixsins';
+
+@import 'header';
+@import 'components/carousel';
+@import 'components/viewProduct';
+@import 'components/brandImg';
+@import 'components/listProduct';
+@import 'components/brandLink';
+@import 'components/form';
+@import 'components/detailProduct';
+@import 'components/comment';
+@import 'components/products';
+@import 'components/navAdmin';
+@import 'footer';

@@ -1,0 +1,18 @@
+
+
+$font-bold : bold;
+$font-medium : 400;
+$font-normal : 500;
+$font-lighter : 600;
+
+@mixin font-base-1 {
+    font-family: '../fonts/Roboto-Bold.ttf', sans-serif !important;
+}
+
+@mixin font-base-2 {
+    font-family: '../fonts/BebasNeue-Regular.ttf', cursive !important;
+}
+
+@mixin font-base-3 {
+    font-family: '../fonts/iCielVAGRoundedNext-Regular.87c1af30.otf', sans-serif !important;
+}

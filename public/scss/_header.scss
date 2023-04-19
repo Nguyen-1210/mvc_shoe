@@ -1,0 +1,128 @@
+header.header {
+    height: 80px;
+    @include bgc($color-black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+
+    .navbar-header {
+
+        .navbar-menu {
+            width: 40%;
+
+            .navbar {
+                .nav-lists {
+                    .nav-item {
+                        .nav-link-menu {
+                            font-size: 24px;
+                            @include font-base-1;
+                            line-height: 24px;
+                            font-weight: $font-normal;
+                            color: $color-white;
+
+                            &.active,
+                            &:hover,
+                            &:focus {
+                                color: $color-main;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .navbar-brand {
+            width: 20%;
+
+            .brand-link {
+                .brand-img {
+                    border: 0px;
+                    @include bgc(transparent);
+                }
+            }
+        }
+
+        .navbar-form {
+            width: 20%;
+
+            .form-search {
+                border-radius: 10px;
+
+                .form-control {
+                    border: 2px solid $color-main;
+                    border-radius: 0;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+
+                .btn {
+                    height: 100%;
+                    border-radius: 0;
+                    color: $color-white;
+                    @include font-base-3;
+                    font-size: 16px;
+                    @include bgc($color-main);
+                    border: 2px solid $color-main;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+
+                }
+            }
+        }
+
+        .navbar-contact {
+            width: 10%;
+
+            .cart-icon {
+                padding: 5px;
+
+                i {
+                    color: $color-white;
+                    font-size: 20px;
+                }
+            }
+
+            .user-icon {
+                padding: 5px;
+
+                i {
+                    color: $color-white;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+nav.navbar {
+    .navbar-wrapper {
+        .navbar-brand {
+            font-size: 24px;
+            @include font-base-3;
+            line-height: 24px;
+            font-weight: $font-bold;
+            color: $color-black !important;
+        }
+    }
+    .collapse {
+        .input-group {
+            .form-control {
+                font-size: 18px;
+                @include font-base-3;
+                line-height: 18px;
+                font-weight: $font-normal;
+                color: $color-black;
+            }
+        }
+        .dropdown-item {
+            font-size: 16px;
+            @include font-base-3;
+            line-height: 16px;
+            font-weight: $font-normal;
+            color: $color-black;
+        }
+    }
+}

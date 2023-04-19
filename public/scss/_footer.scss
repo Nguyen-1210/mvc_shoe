@@ -1,0 +1,57 @@
+footer.footer {
+    @include bgc($color-black);
+    height: 250px;
+
+    .footer-group {
+        .list-group {
+            @include bgc($color-black);
+
+            .list-group-item {
+                border: 0 transparent;
+                @include bgc($color-black);
+
+                .footer-link {
+                    color: $color-white;
+                    @include font-base-1;
+                    font-size: 20px;
+                    line-height: 20px;
+                    font-weight: $font-normal;
+                }
+            }
+        }
+
+        .contact-footer {
+            .contact-link {
+                color: $color-black;
+                font-size: 20px;
+                line-height: 20px;
+                padding: 10px;
+                border-radius: 50%;
+                @include bgc(#7e7e7e);
+                font-weight: $font-normal;
+                transition: all .1s linear;
+
+                &:hover {
+                    @include bgc($color-white);
+                }
+            }
+        }
+    }
+
+    .draw {
+        display: block;
+        position: relative;
+        width: 100%;
+        border: 1px solid $color-main;
+    }
+
+    .footer-address {
+        .title-address {
+            color: $color-white;
+            font-size: 20px;
+            line-height: 20px;
+            @include font-base-1;
+            font-weight: $font-normal;
+        }
+    }
+}

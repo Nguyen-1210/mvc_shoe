@@ -1,0 +1,42 @@
+.sidebar {
+    .logo {
+        padding: 1px 0.7rem;
+
+        .logo-mini {
+            .logo-image-small {
+                img {
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .logo-normal {
+            font-size: 24px;
+            @include font-base-3;
+            line-height: 24px;
+            font-weight: $font-bold !important;
+            color: $color-black !important;
+        }
+
+        &:after {
+            width: 100%;
+            right: 0;
+            left: 0;
+        }
+    }
+
+    .sidebar-wrapper {
+        .nav {
+           
+                    .nav-link-admin {
+                        font-size: 16px;
+                        @include font-base-3;
+                        line-height: 16px;
+                        font-weight: $font-normal !important;
+                        color: $color-black !important;
+                    }
+            
+            
+        }
+    }
+}

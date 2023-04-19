@@ -1,0 +1,172 @@
+.comment-container {
+    @include bgc(#f6f6f6);
+
+    .heading-comment {
+        padding: 40px 0;
+        padding-left: 40px;
+        @include font-base-1;
+        font-size: 24px;
+        color: $color-black;
+        text-transform: uppercase;
+        font-weight: $font-normal;
+        line-height: 24px;
+    }
+
+    .comment-post {
+        margin-bottom: 80px;
+        .comment-content {
+            width: 100%;
+            padding: 10px;
+            height: 100px;
+            border-radius: 5px;
+            border: 2px solid $color-black;
+
+            &:focus-visible {
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid $color-black;
+            }
+        }
+
+        .btn-post {
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .post {
+                border-radius: 5px;
+                @include bgc($color-black);
+                @include font-base-1;
+                color: $color-white;
+                font-size: 16px;
+                font-weight: $font-normal;
+                line-height: 16px;
+                padding: 10px 15px;
+                text-align: center;
+                transition: all linear;
+
+                &:hover {
+                    @include bgc(#757575);
+                }
+            }
+
+            .cancel {
+                border-radius: 5px;
+                @include bgc($color-white);
+                @include font-base-1;
+                color: $color-black;
+                font-size: 16px;
+                border: 1px solid #ccc;
+                font-weight: $font-normal;
+                line-height: 16px;
+                padding: 10px 15px;
+                text-align: center;
+                transition: all linear;
+
+                &:hover {
+                    border: 1px solid $color-black;
+                }
+            }
+        }
+    }
+    .draw {
+        display: block;
+        width: 100%;
+        border: 1px dashed $color-black;
+    }
+
+    .media {
+        margin-top: 30px;
+
+        .media-user {
+            width: 10%;
+
+            img {
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+
+        .media-body {
+            width: 85%;
+
+            .media-heading {
+                @include font-base-1;
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: $color-black;
+                font-weight: $font-normal;
+                line-height: 18px;
+            }
+
+            .media-content {
+                @include font-base-1;
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: $color-black;
+                font-weight: $font-normal;
+                line-height: 24px;
+            }
+
+            .media-footer {
+                margin-top: 20px;
+                @include font-base-1;
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: $color-black;
+                font-weight: $font-normal;
+                line-height: 24px;
+
+                .media-footer-left {
+                    width: 22%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .media-footer-right {
+                    width: 18%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .like {
+                        border-radius: 5px;
+                        @include bgc($color-black);
+                        @include font-base-1;
+                        color: $color-white;
+                        font-size: 16px;
+                        font-weight: $font-normal;
+                        line-height: 16px;
+                        padding: 10px 15px;
+                        text-align: center;
+                        transition: all linear;
+
+                        &:hover {
+                            @include bgc(#757575);
+                        }
+                    }
+
+                    .rep {
+                        border-radius: 5px;
+                        @include bgc($color-white);
+                        @include font-base-1;
+                        color: $color-black;
+                        font-size: 16px;
+                        border: 1px solid #ccc;
+                        font-weight: $font-normal;
+                        line-height: 16px;
+                        padding: 10px 15px;
+                        text-align: center;
+                        transition: all linear;
+
+                        &:hover {
+                            border: 1px solid $color-black;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

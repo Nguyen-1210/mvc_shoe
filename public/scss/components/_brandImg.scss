@@ -1,0 +1,11 @@
+.brand-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image {
+        width: 33.3333%;
+        height: 250px;
+        object-fit: cover;
+    }
+}

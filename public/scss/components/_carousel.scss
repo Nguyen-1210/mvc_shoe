@@ -1,0 +1,95 @@
+.main-content {
+    margin-top: 80px;
+    .carousel-banner {
+        .carousel {
+            .carousel-inner {
+                .carousel-item {
+                    .carousel-slide {
+                        position: relative;
+                        height: 550px;
+
+                        .image-banner {
+                            height: 100%;
+                            image-rendering: pixelated;
+                            object-position: center;
+                        }
+
+                        .carousel-title {
+                            position: absolute;
+                            z-index: 1;
+                            left: 10%;
+                            bottom: 30%;
+
+                            .title-heading {
+                                @include font-base-1;
+                                font-weight: $font-bold;
+                                font-size: 30px;
+                                text-transform: uppercase;
+                                color: $color-white;
+                                line-height: 35px;
+                                letter-spacing: 2px;
+                            }
+
+                            span {
+                                @include font-base-1;
+                                font-weight: $font-normal;
+                                font-size: 20px;
+                                text-transform: uppercase;
+                                color: $color-main;
+                                line-height: 30px;
+                                letter-spacing: 2px;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .btn-carousel-prev {
+                position: absolute;
+                top: 50%;
+                border: none;
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                left: 3%;
+                @include bgc(#e1e6df33);
+                z-index: 2;
+                transition: all .2s linear;
+
+                &:hover {
+                    @include bgc(#e5e5e5);
+                }
+
+                i {
+                    color: $color-black;
+                    font-size: 30px;
+                    font-weight: $font-bold;
+                }
+            }
+
+            .btn-carousel-next {
+                position: absolute;
+                top: 50%;
+                border: none;
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                right: 3%;
+                @include bgc(#e1e6df33);
+                z-index: 2;
+                transition: all .2s linear;
+
+                &:hover {
+                    @include bgc(#e5e5e5);
+                }
+
+                i {
+                    color: $color-black;
+                    font-size: 30px;
+                    font-weight: $font-bold;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.content {
+	margin-top: 100px !important;
+
+	.title-product {
+		@include font-base-3;
+		font-size: 15px;
+		line-height: 15px;
+		color: $color-black !important;
+		font-weight: $font-bold;
+	}
+
+	.btn-outline-custom {
+		width: 20%;
+		margin-right: 15px;
+		border: 2px #ba2b20 solid;
+		@include bgc(transparent);
+		color: #ba2b20;
+
+		&:hover {
+			border: 2px #ba2b20 solid;
+			@include bgc(#ba2b20 !important);
+			color: $color-white;
+		}
+	}
+
+	.formAdProduct {
+		.row {
+			.col-lg-12 {
+				.form-admin {
+					.mb-2 {
+						.form-label {
+							@include font-base-3;
+							font-size: 20px;
+							line-height: 20px;
+							color: $color-black;
+							margin-bottom: 10px;
+							margin-left: 10px;
+							font-weight: $font-normal;
+						}
+
+						textarea.form-control {
+							width: 100%;
+							min-height: 140px;
+							height: 140px;
+						}
+
+						.form-control {
+							@include font-base-3;
+							font-size: 20px;
+							line-height: 20px;
+							border-radius: 5px;
+							color: $color-black;
+							padding: 10px;
+							padding-left: 15px;
+							font-weight: $font-normal;
+						}
+					}
+
+					.text-muted {
+						@include font-base-3;
+						font-size: 18px;
+						margin: 5px 0px 0px 10px;
+						line-height: 15px;
+						color: #ba2b20 !important;
+						font-weight: $font-normal;
+					}
+				}
+			}
+
+		}
+
+		.btn-outline-custom {
+			width: 20%;
+			margin-right: 15px;
+			border: 2px #ba2b20 solid;
+			@include bgc(transparent);
+			color: #ba2b20;
+
+			&:hover {
+				border: 2px #ba2b20 solid;
+				@include bgc(#ba2b20 !important);
+				color: $color-white;
+			}
+		}
+	}
+
+
+	.list-product-admin {
+		thead {
+			tr {
+				th {
+					border: 1px solid #ba2b20;
+				}
+
+				.std {
+					width: 15%;
+				}
+
+				.name-list-product {
+					width: 20%;
+				}
+
+				.price-list-product {
+					width: 12%;
+				}
+				.price-sale-list-product {
+					width: 12%;
+				}
+
+				.gender-list-product {
+					width: 11%;
+				}
+
+				.img-list-product {
+					width: 11%
+				}
+
+				.discript-list-product {
+					width: 11%;
+				}
+
+				.title {
+					@include font-base-3;
+					font-size: 15px;
+					text-transform: capitalize;
+					line-height: 15px;
+					color: $color-black !important;
+					font-weight: $font-normal;
+				}
+			}
+		}
+
+		tbody {
+			tr {
+				height: 80px;
+
+				td {
+					border: 1px solid #ba2b20;
+				}
+
+				.std {
+					width: 15%;
+				}
+
+				.name-list-product {
+					width: 20%;
+				}
+
+				.price-list-product {
+					width: 12%;
+				}
+				.price-sale-list-product {
+					width: 12%;
+				}
+
+				.gender-list-product {
+					width: 11%;
+				}
+
+				.img-list-product {
+					width: 11%;
+
+					img {
+						padding: 10px;
+						width: 80px;
+						height: 80px;
+						object-fit: cover;
+						image-rendering: pixelated;
+					}
+				}
+
+				.discript-list-product {
+					width: 11%;
+
+					span {
+						font-size: 14px !important;
+						line-height: 1.4rem !important;
+						height: 4.2rem !important;
+						display: block;
+						overflow: hidden;
+						text-align: left;
+						display: -webkit-box;
+						text-transform: none !important;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 3;
+					}
+				}
+
+				.title {
+					@include font-base-3;
+					font-size: 14px;
+					text-align: center;
+					line-height: 18px;
+					text-transform: capitalize;
+					color: $color-black !important;
+					font-weight: $font-normal;
+				}
+			}
+		}
+	}
+}
